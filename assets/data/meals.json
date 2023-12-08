@@ -1,0 +1,32 @@
+{
+    "meals":[
+        {
+            "name":"Delicious Pizza",
+            "descrption":"Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price":20,
+            "image":"f1.png",
+            "type":"1"
+        },
+        {
+            "name":"Delicious Burger",
+            "descrption":"Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price":30,
+            "image":"f2.png",
+            "type":"2"
+        },
+        {
+            "name":"French Fries",
+            "descrption":"Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price":50,
+            "image":"f3.png",
+            "type":"3"
+        },
+        {
+            "name":"Delicious Pasta",
+            "descrption":"Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price":40,
+            "image":"f4.png",
+            "type":"3"
+        }
+    ]
+}

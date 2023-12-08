@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="">
+    <title>Add Meals</title>
+    <script>
+        if(sessionStorage.getItem('userName') != 'mahmoud123'){
+            location.href = '../admin/login.html';
+        }
+    </script>
+     <!-- bootstrap core css -->
+     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css" />
+     <!--owl slider stylesheet -->
+     <link rel="stylesheet" type="text/css"
+         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+     <!-- nice select  -->
+
+     <!-- font awesome style -->
+     <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- Custom styles for this template -->
+     <link href="../assets/css/style.css" rel="stylesheet" />
+     <!-- responsive style -->
+     <link href="../assets/css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <!-- book section -->
+    <section class="book_section layout_padding">
+        <div class="container offset-md-4">
+            <h1 id="greeting"></h1>
+            <div class="heading_container">
+                <h2>
+                    Add Meals
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form_container">
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" required/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="price">Price:</label>
+                                <input type="number" class="form-control" min="5" id="price" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="type">Select Type of Meals</label>
+                                <select class="form-control" id="type" required>
+                                    <option value="0">Select Type of Meals</option>
+                                    <option value="1">breakFast</option>
+                                    <option value="2">Lanuch</option>
+                                    <option value="3">Dinner</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="descrption">Descrption:</label>
+                                <textarea required class="form-control" id="descrption" cols="30" rows="30"></textarea>
+                            </div>
+
+
+
+                            <p id="errerMessage" class="alert alert-danger" style="display: none;cursor:pointer">Faild Login!</p>
+                            <div class="btn_box">
+                                <button type="submit">
+                                    Login
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end book section -->
+
+
+
+
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <div class="footer_contact">
+                        <h4>
+                            Contact Us
+                        </h4>
+                        <div class="contact_link_box">
+                            <a href="">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>
+                                    Location
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>
+                                    Call +01 1234567890
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>
+                                    demo@gmail.com
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <div class="footer_detail">
+                        <a href="../index.html" class="footer-logo">
+                            Feane
+                        </a>
+                        <p>
+                            Necessary, making this the first true generator on the Internet. It uses a dictionary of
+                            over 200 Latin words, combined with
+                        </p>
+                        <div class="footer_social">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h4>
+                        Opening Hours
+                    </h4>
+                    <p>
+                        Everyday
+                    </p>
+                    <p>
+                        10.00 Am -10.00 Pm
+                    </p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>
+                    &copy; <span id="displayYear"></span> All Rights Reserved By
+                    <a href="https://html.design/">Free Html Templates</a><br><br>
+                    &copy; <span id="displayYear"></span> Distributed By
+                    <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+
+    <!-- jQery -->
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <!-- custom js -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/storeMeals.js"></script>
+</body>
+
+</html>
