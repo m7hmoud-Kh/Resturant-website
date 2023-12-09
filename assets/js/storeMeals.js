@@ -1,5 +1,5 @@
 var greeting = document.getElementById('greeting');
-greeting.innerHTML = `Welcome Admin:  ${sessionStorage.getItem('userName')}`;
+greeting.innerHTML = `Welcome,${sessionStorage.getItem('userName')}`;
 
 var form = document.forms[0];
 
@@ -13,7 +13,7 @@ form.addEventListener('submit',function(e){
     var arrError = [];
     var allowType = ['1','2','3'];
 
-    
+
     if(!allowType.includes(typeElem.value)){
         arrError.push("You Must choose Type of meals");
     }
