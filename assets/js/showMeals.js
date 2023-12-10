@@ -138,11 +138,15 @@ if (getAllMeals) {
     mealsParentElm.appendChild(mealElm);
     }
 
-    
+
     var myOrder = JSON.parse(localStorage.getItem("purchaseMeals"));
     var flagButtonViewOrder = 0;
     window.addEventListener('load',function(){
         changeStyleViewOrderWhenNotPurchase();
     });
+
+    console.log(JSON.parse(localStorage.getItem("purchaseMeals")));
+    console.log(JSON.parse(localStorage.getItem("meals")));
+
 
 }

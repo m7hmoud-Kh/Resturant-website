@@ -160,6 +160,9 @@
     </div>
   </section>
    <!-- footer section -->
+
+
+
    <footer class="footer_section">
     <div class="container">
       <div class="row">
@@ -253,6 +256,12 @@
   <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
   <!-- custom js -->
   <script src="./assets/js/custom.js"></script>
+  <script>
+    var myOrder = JSON.parse(localStorage.getItem("purchaseMeals"));
 
+    for(const meal of myOrder){
+      console.log(meal.name,meal.price)
+    }
+  </script>
 </body>
 </html>
