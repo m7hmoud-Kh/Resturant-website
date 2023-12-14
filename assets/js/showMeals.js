@@ -3,7 +3,7 @@ var getAllMeals = JSON.parse(localStorage.getItem("meals"));
 var showOrder = document.getElementById('showOrder');
 
 function changeStyleViewOrderWhenNotPurchase(){
-    if(!myOrder){
+    if(myOrder == null){
         showOrder.style.opacity = '0.3';
         showOrder.style.backgroundColor = 'red';
         showOrder.style.cursor = 'default'
@@ -117,7 +117,7 @@ if (getAllMeals) {
             parElm.classList.add("alert", "alert-danger");
             parElm.textContent = `You Added Before`;
         }
-        changeStyleViewOrderWhenOrder();
+            changeStyleViewOrderWhenOrder();
         this.parentElement.parentElement.append(parElm);
         setTimeout(() => {
             this.parentElement.parentElement.removeChild(parElm);
@@ -146,7 +146,4 @@ if (getAllMeals) {
     });
 
     console.log(JSON.parse(localStorage.getItem("purchaseMeals")));
-    console.log(JSON.parse(localStorage.getItem("meals")));
-
-
 }
